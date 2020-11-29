@@ -1,13 +1,35 @@
 #include <iostream>
 #include <cmath>
 
-//Function declarations
+/*
+* Initalise function.
+*/
 void init();
-void requestFirstNumberInput(); //Ask user for their first number (placed into variable firstInput)
-void requestOperatorInput(); //Ask user for what operator they want to use (placed into variable operatorInput)
-void operatorValidator(char user_input); //Check the operatorInput value is acceptable to continue, otherwise sends user back 1 step
-void requestSecondNumberInput(); //Ask user for the second number (placed into variable secondInput)
-void calculateResult(double firstInput, char operatorInput, double secondInput); //Perform calculation and display result
+
+/*
+* Ask user for first number (placed into variable firstInput).
+*/
+void requestFirstNumberInput(); 
+
+/*
+* Ask user for what operator they want to use.
+*/
+void requestOperatorInput();
+
+/*
+* Check the operatorInput value is acceptable to continue, otherwise user retries.
+*/
+void operatorValidator(char userInput); 
+
+/*
+* Ask user for second number.
+*/
+void requestSecondNumberInput();
+
+/*
+* Perform calculation and display result.
+*/
+void calculateResult(double firstInput, char operatorInput, double secondInput); 
 
 //Variable declarations
 double firstInput;
