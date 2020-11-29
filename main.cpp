@@ -1,21 +1,13 @@
 #include <iostream>
 #include <cmath>
 
-/*Simple Calculator									
-Takes a single number input (can accept decimals!)
-Then asks for an operator
-Then ANOTHER decimal input	
-Does calculating magic and you have your answer.
-*/
-
 //Function declarations
-//Input gathering  
-void requestFirstNumberInput();
-void requestOperatorInput();
-void operatorValidator(char user_input);
-void requestSecondNumberInput();
-void calculateResult(double firstInput, char operatorInput, double secondInput);
 void init();
+void requestFirstNumberInput(); //Ask user for their first number (placed into variable firstInput)
+void requestOperatorInput(); //Ask user for what operator they want to use (placed into variable operatorInput)
+void operatorValidator(char user_input); //Check the operatorInput value is acceptable to continue, otherwise sends user back 1 step
+void requestSecondNumberInput(); //Ask user for the second number (placed into variable secondInput)
+void calculateResult(double firstInput, char operatorInput, double secondInput); //Perform calculation and display result
 
 //Variable declarations
 double firstInput;
